@@ -1,0 +1,23 @@
+data/bibtex/lerobot.bib
+  20fa5c0feb1a093a 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "ba0e51deb94edb8055941f3553546617cb086c5e",
+  "prompts": {
+    "20fa5c0feb1a093a": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "56c67de6-69f6-4dd0-b3d2-5f1715830946",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Michel Aractingi",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 21,
+      "overriden_lines": 0
+    }
+  }
+}
