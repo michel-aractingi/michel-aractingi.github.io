@@ -63,15 +63,29 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+:root {
+  --bg-color: #282c34;
+  --text-color: #abb2bf;
+  --heading-color: #e5c07b;
+  --section-title-color: #c678dd;
+  --date-color: #98c379;
+  --link-color: #61afef;
+  --link-hover-color: #d19a66;
+}
+
 a {
-  color: #1772d0;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: var(--link-hover-color);
   text-decoration: none;
+}
+
+html {
+  background-color: var(--bg-color);
 }
 
 body,
@@ -81,7 +95,34 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
+}
+
+body,
+td,
+th,
+tr,
+p,
+li {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 24px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+.section-title {
+  color: var(--section-title-color);
+  font-weight: 700;
+}
+
+.timeline-date {
+  color: var(--date-color);
 }
 
 strong {
@@ -92,17 +133,20 @@ strong {
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: var(--heading-color);
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
+  color: var(--heading-color);
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  color: #ffffff;
 }
 
 .one {
