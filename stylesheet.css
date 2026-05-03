@@ -67,10 +67,11 @@
   --bg-color: #282c34;
   --text-color: #abb2bf;
   --heading-color: #e5c07b;
-  --section-title-color: #c678dd;
+  --section-title-color: #e06c75;
   --date-color: #98c379;
   --link-color: #61afef;
-  --link-hover-color: #d19a66;
+  --link-hover-color: #e06c75;
+  --editor-font: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 a {
@@ -94,8 +95,9 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: var(--editor-font);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 body,
@@ -126,26 +128,26 @@ li {
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: var(--editor-font);
+  font-size: 13px;
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: var(--editor-font);
+  font-size: 20px;
   color: var(--heading-color);
 }
 
 papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: var(--editor-font);
+  font-size: 13px;
   font-weight: 700;
   color: var(--heading-color);
 }
 
 name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-family: var(--editor-font);
+  font-size: 30px;
   color: #ffffff;
 }
 
